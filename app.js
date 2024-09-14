@@ -3,10 +3,15 @@ import chatCompletion from './services/openai.js';
 
 const app = express();
 
+app.use(express.static('public'));
+
 app.get(
-    '/',
-    (req, res) => {
-        res.send('Hello from my lovely new server!');
+    '/get-poem',
+    async (req, res) => {
+        const response = await chatCompletion(
+            "Write a short, expressive poem about lemons, as if you are hungry. Just four lines!"
+        );
+        res.send({ poem: response });
     }
 );
 
