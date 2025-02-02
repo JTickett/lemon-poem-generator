@@ -1,7 +1,7 @@
 {
   "name": "lemon-poem-generator",
   "version": "1.0.0",
-  "description": "",
+  "description": "This repository demonstrates how to create a ‘lemon poem generator’ as a simple [Express](https://expressjs.com/) server and webpage.",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon index.js",
@@ -12,11 +12,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.21.0",
-    "openai": "^4.61.0"
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "openai": "^4.82.0"
   },
   "devDependencies": {
-    "nodemon": "^3.1.4"
+    "nodemon": "^3.1.9"
   }
 }
